@@ -1,4 +1,4 @@
-Before start this excercise,you mjust have running CENTOS linux machine.
+Before start this excercise,you must have running CENTOS 8 linux machine. [you can even create this linux machine in azure cloud itself]
 
 Step 1: Install AZURE CLI
 
