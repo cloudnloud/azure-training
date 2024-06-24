@@ -10,7 +10,9 @@ sudo dnf install -y https://packages.microsoft.com/config/rhel/8/packages-micros
 sudo dnf install azure-cli
 ```
 
+```
 az login
+```
 
 Now your linux machine has been fully authenticated with AZURE login.
 
