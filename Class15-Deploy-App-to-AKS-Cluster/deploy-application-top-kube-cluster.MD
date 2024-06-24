@@ -82,7 +82,7 @@ az aks get-versions --location eastus -o table
 az aks create --resource-group k8s-dev-environment --name my-cluster --location eastus --node-count 1 --generate-ssh-keys
 ```
 ```
-az aks get-credentials --resource-group cnl-dev-environment --name my-cluster
+az aks get-credentials --resource-group k8s-dev-environment --name my-cluster
 ```
 ```
 kubectl get nodes
