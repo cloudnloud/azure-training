@@ -110,7 +110,7 @@ docker images
 now downloading the sample image microsoft repository
 
 ```
-docker pull mcr.microsoft.com/dotnet/samples:aspnetapp
+docker pull nginx
 ```
 
 Prepare your downloaded sample image towards Microsoft Repository standards 
@@ -121,7 +121,7 @@ docker tag <your custom image> <ACRName>.azurecr.io/<imagenameofchoice>
 now in the above command replace like this below
 
 ```
-docker tag mcr.microsoft.com/dotnet/core/samples:aspnetapp rangapublicrepo.azurecr.io/msapp:v1.0
+docker tag nginx rangapublicrepo.azurecr.io/nginx:v1.0
 ```
 
 verify via docker images command
@@ -133,7 +133,7 @@ docker images
 Push your customised Docker image which you created into ACR repository
 
 ```
-docker push rangapublicrepo.azurecr.io/msapp:v1.0
+docker push rangapublicrepo.azurecr.io/nginx:v1.0
 ```
 
 
