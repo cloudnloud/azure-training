@@ -60,7 +60,12 @@ az provider list --query "[?registrationState=='Registered'].{Name:namespace, St
 ```
 az group list
 ```
-cnl-dev-environment
+
+- to see all azure region list
+
+```
+az account list-locations -o table
+```
 
 ************************************************************
 
@@ -68,11 +73,13 @@ Step 4: AKS - Azure Kubernetes Cluster
 
 Creating a Resource Group
 ```
-az group create --name cnl-dev-environment --location westeurope 
+az group create --name k8s-dev-environment --location eastus
 ```
-az aks get-versions --location westeurope -o table
 ```
-az aks create --resource-group cnl-dev-environment --name my-cluster --location westeurope --node-count 1 --generate-ssh-keys
+az aks get-versions --location eastus -o table
+```
+```
+az aks create --resource-group k8s-dev-environment --name my-cluster --location eastus --node-count 1 --generate-ssh-keys
 ```
 ```
 az aks get-credentials --resource-group cnl-dev-environment --name my-cluster
