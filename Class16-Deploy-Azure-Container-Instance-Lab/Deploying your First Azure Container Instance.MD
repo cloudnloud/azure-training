@@ -42,13 +42,6 @@ Step 2 - first install docker in the local linux machine
  yum install epel-release -y
  yum repolist
 ```
-#Install the required dependencies:
-```
-yum install yum-utils device-mapper-persistent-data lvm2  bash-completion bash-completion-extras -y
-```
-```
-source /etc/profile.d/bash_completion.sh
-```
 #Add the stable Docker repository by typing:
 ```
 yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
