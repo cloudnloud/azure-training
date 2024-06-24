@@ -2,20 +2,13 @@ Before start this excercise,you must have running CENTOS 8 linux machine. [you c
 
 Step 1: Install AZURE CLI
 - reference - https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-linux?pivots=dnf#install-azure-cli
+```
+sudo dnf install -y https://packages.microsoft.com/config/rhel/8/packages-microsoft-prod.rpm
+```
 
-sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
-
-sudo sh -c 'echo -e "[azure-cli]
-name=Azure CLI
-baseurl=https://packages.microsoft.com/yumrepos/azure-cli
-enabled=1
-gpgcheck=1
-gpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/azure-cli.repo'
-
-
-
-sudo yum install azure-cli -y
-
+```
+sudo dnf install azure-cli
+```
 
 az login
 
