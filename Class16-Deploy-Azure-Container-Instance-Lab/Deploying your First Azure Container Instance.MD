@@ -110,7 +110,7 @@ docker images
 now downloading the sample image microsoft repository
 
 ```
-docker pull mcr.microsoft.com/dotnet/core/samples:aspnetapp
+docker pull mcr.microsoft.com/dotnet/samples:aspnetapp
 ```
 
 Prepare your downloaded sample image towards Microsoft Repository standards 
